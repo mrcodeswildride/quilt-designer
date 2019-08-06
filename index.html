@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quilt Designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="prefetch" href="pattern.jpg">
+    <link rel="prefetch" href="boat.jpg">
+    <link rel="prefetch" href="dog.jpg">
+</head>
+
+<body>
+    <h1>Quilt Designer</h1>
+
+    <div id="grid">
+        <div>
+            <div id="square1" class="square"></div>
+            <div id="square2" class="square"></div>
+            <div id="square3" class="square"></div>
+        </div>
+        <div>
+            <div id="square4" class="square"></div>
+            <div id="square5" class="square"></div>
+            <div id="square6" class="square"></div>
+        </div>
+        <div>
+            <div id="square7" class="square"></div>
+            <div id="square8" class="square"></div>
+            <div id="square9" class="square"></div>
+        </div>
+    </div>
+
+    <div id="controlPanel">
+        <div class="section">
+            <div>
+                <strong>Background image:</strong>
+            </div>
+
+            <div>
+                <button id="noBackground">None</button>
+                <button id="pattern">Pattern</button>
+                <button id="boat">Boat</button>
+                <button id="dog">Dog</button>
+            </div>
+
+            <p id="selectedBackground">Selected image: none</p>
+        </div>
+
+        <div class="section">
+            <div>
+                <strong>Rotation:</strong>
+            </div>
+
+            <div>
+                <button id="rotation0">0 degrees</button>
+                <button id="rotation90">90 degrees</button>
+                <button id="rotation180">180 degrees</button>
+                <button id="rotation270">270 degrees</button>
+            </div>
+
+            <p id="selectedRotation">Selected rotation: none</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
