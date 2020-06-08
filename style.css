@@ -1,0 +1,42 @@
+body {
+  background-color: beige;
+}
+
+#grid,
+#sidePanel {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#grid {
+  border: 1px solid black;
+  font-size: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.square {
+  display: inline-block;
+  width: 125px;
+  height: 125px;
+  border: 1px solid black;
+}
+
+.label {
+  font-weight: bold;
+}
+
+button {
+  padding: 5px;
+}
+
+#patternButton,
+#boatButton,
+#rotation90Button,
+#rotation180Button {
+  margin-right: 5px;
+}
+
+#imageParagraph {
+  margin-bottom: 30px;
+}

@@ -2,68 +2,50 @@
 <html>
 
 <head>
-    <title>Quilt Designer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="prefetch" href="pattern.jpg">
-    <link rel="prefetch" href="boat.jpg">
-    <link rel="prefetch" href="dog.jpg">
+	<title>Quilt Designer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<link href="style.css" rel="stylesheet">
+	<link href="pattern.jpg" rel="prefetch">
+	<link href="boat.jpg" rel="prefetch">
+	<link href="dog.jpg" rel="prefetch">
+	<script src="script.js" defer>
+
+	</script>
 </head>
 
 <body>
-    <h1>Quilt Designer</h1>
+	<h1>Quilt Designer</h1>
 
-    <div id="grid">
-        <div>
-            <div id="square1" class="square"></div>
-            <div id="square2" class="square"></div>
-            <div id="square3" class="square"></div>
-        </div>
-        <div>
-            <div id="square4" class="square"></div>
-            <div id="square5" class="square"></div>
-            <div id="square6" class="square"></div>
-        </div>
-        <div>
-            <div id="square7" class="square"></div>
-            <div id="square8" class="square"></div>
-            <div id="square9" class="square"></div>
-        </div>
-    </div>
+	<div id="grid">
+		<div>
+			<div class="square" id="square1"></div>
+			<div class="square" id="square2"></div>
+			<div class="square" id="square3"></div>
+		</div>
+		<div>
+			<div class="square" id="square4"></div>
+			<div class="square" id="square5"></div>
+			<div class="square" id="square6"></div>
+		</div>
+		<div>
+			<div id="square7" class="square"></div>
+			<div id="square8" class="square"></div>
+			<div id="square9" class="square"></div>
+		</div>
+	</div>
 
-    <div id="controlPanel">
-        <div class="section">
-            <div>
-                <strong>Background image:</strong>
-            </div>
-
-            <div>
-                <button id="noBackground">None</button>
-                <button id="pattern">Pattern</button>
-                <button id="boat">Boat</button>
-                <button id="dog">Dog</button>
-            </div>
-
-            <p id="selectedBackground">Selected image: none</p>
-        </div>
-
-        <div class="section">
-            <div>
-                <strong>Rotation:</strong>
-            </div>
-
-            <div>
-                <button id="rotation0">0 degrees</button>
-                <button id="rotation90">90 degrees</button>
-                <button id="rotation180">180 degrees</button>
-                <button id="rotation270">270 degrees</button>
-            </div>
-
-            <p id="selectedRotation">Selected rotation: none</p>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+	<div id="sidePanel">
+    <p class="label">Image</p>
+    <button id="patternButton">Pattern</button>
+    <button id="boatButton">Boat</button>
+    <button id="dogButton">Dog</button>
+    <p id="imageParagraph">Selected image: none</p>
+    
+    <p class="label">Rotation</p>
+    <button id="rotation90Button">90 degrees</button>
+    <button id="rotation180Button">180 degrees</button>
+    <button id="rotation270Button">270 degrees</button>
+    <p id="rotationParagraph">Selected rotation: none</p>
 </body>
 
 </html>
