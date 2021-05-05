@@ -18,8 +18,8 @@ let rotation180Button = document.getElementById(`rotation180Button`)
 let rotation270Button = document.getElementById(`rotation270Button`)
 let rotationParagraph = document.getElementById(`rotationParagraph`)
 
-let selectedImage = ``
-let selectedRotation = ``
+let selectedImage
+let selectedRotation
 
 square1.addEventListener(`click`, changeSquare)
 square2.addEventListener(`click`, changeSquare)
